@@ -1,0 +1,12 @@
+﻿MVC过滤器分为四种类型
+Authorization(授权),Action（行为）,Result（结果）和Exception（异常）
+接口分别对应
+IAuthorizationFilter,IActionFilter,IResultFilter,IExceptionFilter
+
+其中默认实现了三种分别为
+AuthorizeAttribute,ActionFilterAttribute,HandleErrorAttribute
+
+其中默认需要通过FormsAuthentication.SetAuthCookie方法，获得授权
+通过FormsAuthentication.SignOut释放授权
+
+
