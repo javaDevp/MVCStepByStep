@@ -9,14 +9,13 @@ namespace MyMVCDemo.Controllers
 {
     public class HomeController : Controller
     {
-        [JsonException]
+        //[JsonException]
         public ActionResult Index()
         {
-            throw new Exception("aaaaa");
-            //return View(new JsonResult()
-            //{
-            //    Data = new { Success = false, Message = "aaa" }
-            //});
+            #region 测试异常处理
+            //throw new Exception("aaaaa");
+            #endregion
+            return View();
         }
     }
 }

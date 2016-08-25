@@ -1,0 +1,43 @@
+﻿创建导航基本模板：
+<div class="navbar">  //此处换成<nav>标签
+	<div class="container">
+		 <div class="navbar-header">
+		 </div>
+		 <div>
+		 </div>
+	</div>
+</div>
+
+
+navbar可用样式模板：
+只有navbar：白色背景-蓝色文字
+navbar-default：灰白色背景-灰色文字
+navbar-inverse：黑色背景-白色文字
+
+navbar内部组件停靠位置：
+navbar-left：左对齐
+navbar-right:右对齐
+
+navbar内部组件设置图标(glyphicon)
+常用的几种图标：（具体可查询：http://www.runoob.com/bootstrap/bootstrap-glyphicons.html）
+glyphicon-user：用户
+glyphicon-log-in：登录
+
+设置导航位置的几个class：
+navbar-static-top：静态顶部
+navbar-fixed-top：固定在页面顶部
+navbar-fixed-bottom：固定在页面底部
+
+navbar中文字组件需要设置navbar-text样式class
+以使文字垂直居中、字体、颜色等统一（通常与<p>标签一起使用）
+
+navbar中的form组件需要设置navbar-form样式class
+
+navbar中不在<form>中的<button>需要设置navbar-btn样式class
+以使按钮垂直居中（也可用于<a>或者<input> 注意：不要在 .navbar-nav 内的 <a> 元素上使用 .navbar-btn，因为它不是标准的 button class）
+
+当屏幕小的时候，navbar显示折叠：
+navbar-header里加一个button元素，设置class="navbar-toggle" data-toggle="collapse" 
+data-target=".navbar-collapse" 与navbar-header对应div，同级的div必须与button的data-target对应
+
+最多二级菜单
